@@ -20,6 +20,25 @@ sealed class Screen(val route: String) {
 }
 
 @Composable
+//fun Navigation(navController: NavHostController = rememberNavController()) {
+//    NavHost(
+//        navController = navController,
+//        startDestination = Screen.Main.route,
+//        modifier = Modifier
+//    ) {
+//        composable(Screen.Main.route) {
+//            MainScreen(navController)
+//        }
+//        composable(Screen.History.route) {
+//            ScanHistoryScreen(navController)
+//        }
+//        composable(Screen.Result.route) { backStackEntry ->
+//            val result = backStackEntry.arguments?.getString("result") ?: "No Result"
+//            ScanResultScreen(result, navController)
+//        }
+//    }
+//}
+
 fun Navigation(navController: NavHostController = rememberNavController()) {
     NavHost(
         navController = navController,
@@ -38,3 +57,4 @@ fun Navigation(navController: NavHostController = rememberNavController()) {
         }
     }
 }
+
