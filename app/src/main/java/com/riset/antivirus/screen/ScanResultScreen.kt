@@ -132,7 +132,6 @@ import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
 import com.riset.antivirus.database.ScanHistoryDb
-
 import com.riset.antivirus.navigation.Screen
 import com.riset.antivirus.viewmodel.MainViewModel
 
